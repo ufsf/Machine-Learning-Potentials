@@ -1,1 +1,16 @@
+TabGAP:
+https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.104101
+https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.6.083801
+Potentials: https://etsin.fairdata.fi/dataset/2498ae37-7325-4e51-aed2-473b12ebae69/data
 
+MTP14-Yin and SNAP:
+https://www.nature.com/articles/s41467-021-25134-0
+data: https://github.com/materialsvirtuallab/snap/tree/master/NbMoTaW
+Potentials: https://github.com/materialsvirtuallab/snap/tree/master/NbMoTaW
+Potentials - VIP: https://github.com/materialsvirtuallab/maml/tree/master/mvl_models/pes
+
+MTP-Wang for MoNbTaVW:
+https://www.nature.com/articles/s41524-024-01330-6
+Potentials: https://github.com/ucsdlxg/MoNbTaVW-ML-interatomic-potential-and-CRSS-ML-model
+
+My own MTP14 and MTP16:
