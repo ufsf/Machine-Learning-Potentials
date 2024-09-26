@@ -1,0 +1,26 @@
+# convert VASP OUTCAR to MTP cfg
+mpirun -np 1 /home/fshuang/Tools/mlip-2/bin/mlp convert-cfg --input-format=vasp-outcar $d/OUTCAR $d.cfg
+
+# convert cfg to VASP POSCAR. Need to add elements
+mlp convert-cfg diff.cfg outmodel --output-format=vasp-poscar
+for d in {0..339}; do (sed '5a\Mo Te' outmodel${d} > $d.POSCAR;); done
+
+# train a potential - mtp2
+mlp train curr.mtp train.cfg --trained-pot-name=curr.mtp --update-mindist --max-iter=500 --valid-cfgs=valid.cfg
+
+# select representative configurations - mtp2
+mlp calc-grade curr.mtp BPNa.cfg BPNa.cfg out.cfg --als-filename=state.als
+mlp select-add curr.mtp Na1-in.cfg Na1-all.cfg Na1-AL.cfg --als-filename=state.als
+
+# calculate error and predictions
+mlp calc-efs pot.mtp in.cfg out.cfg
+mlp calc-errors pot.mtp db.cfg
+
+# snelius script
+#!/bin/bash
+#SBATCH -n 1
+#SBATCH -t 03:00:00
+#SBATCH -p genoa
+ml 2022
+ml intel/2022a
+export OMP_NUM_THREADS=1
