@@ -1,5 +1,5 @@
-1. Run MD
-2. ######################### lammps select new clusters
+1. Run MD without active learning
+2. ######################### lammps select new clusters, run MD with active learning
 units           metal
 atom_style	atomic
 boundary        p p p
