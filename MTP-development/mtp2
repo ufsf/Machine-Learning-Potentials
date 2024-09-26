@@ -6,7 +6,7 @@ mlp convert-cfg diff.cfg outmodel --output-format=vasp-poscar
 for d in {0..339}; do (sed '5a\Mo Te' outmodel${d} > $d.POSCAR;); done
 
 # train a potential - mtp2
-mlp train curr.mtp train.cfg --trained-pot-name=curr.mtp --update-mindist --max-iter=500 --valid-cfgs=valid.cfg
+mlp train curr.mtp train.cfg --trained-pot-name=curr.mtp --update-mindist --max-iter=500 --valid-cfgs=valid.cfg --stress-weight=0
 
 # select representative configurations - mtp2
 mlp calc-grade curr.mtp BPNa.cfg BPNa.cfg out.cfg --als-filename=state.als
