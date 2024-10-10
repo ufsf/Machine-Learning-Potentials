@@ -1,1 +1,28 @@
+1. Pure metals considering general plasticity (GP)
+BCC transition metals: Mo, Nb, Ta, and W (ACE)
+FCC Aluminium (MTP and ACE)
+
+BCC Fe from https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.113606 (not our database)
+FCC Al Cu Ni from https://gitlab.com/jezper/tabgap/-/tree/master/potentials?ref_type=heads (tabGAP)
+
+2. High entropy alloys (Most of them are in MTP form)
+MoNbTaW-new: Add USF, edge and screw dislocations, vacancy, grain boundaries, AL-deformation (17654 cfgs)
+MoNbTaW for general plasticity: Add Mo, Nb, Ta, and W from database 1 for GP, and new DFT calculations for Mo25Nb25Ta25W25 by rescaling lattice in GP of pure metals
+
+MoNbTaTi from https://www.nature.com/articles/s41524-023-01046-z (not our database) (MTP)
+MoNbTaVW from https://www.nature.com/articles/s41524-024-01330-6 (not our databae) (MTP)
+MoNbTaVW from https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.104101 (tabGAP); https://gitlab.com/jezper/tabgap/-/tree/master/potentials?ref_type=heads
+CrCoNi from https://www.pnas.org/doi/10.1073/pnas.2322962121 (not our database) (MTP)
+
+
+3. Hydrogen in pure metals
+FeH from https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.113606 (NNP, MTP and ACE)
+
+4. Hydrogen in high entropy alloys
+MoNbTaW-H (MTP)
+MoNbTaW-H for screw dislocation (MTP)
+MoNbTaTi-H (MTP)
+
+5. BCC iron with carbon
+FeC from https://www.sciencedirect.com/science/article/pii/S1359645424007584 (NNP, MTP and ACE)
 
