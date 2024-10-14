@@ -16,3 +16,5 @@ pace_yaml2yace output_potential.yaml
 
 pace_activeset -d fitting_data_info.pckl.gzip output_potential.yaml
 
+https://github.com/ICAMS/python-ace/tree/master/examples
+
