@@ -1,3 +1,4 @@
 This folder contains some important script for MLIP development using MTP and active learning.
 self.mtp_stress_order = ["xx", "yy", "zz", "yz", "xz", "xy"]
+                          0      1    2     3     4      5
 self.vasp_stress_order = ["xx", "yy", "zz", "xy", "yz", "xz"]
