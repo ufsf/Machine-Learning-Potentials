@@ -24,3 +24,6 @@ run 0
 # 
 # calculate grade for a large structure
 srun /home/fshuang/Tools/mlip-3/bin/mlp calculate_grade basic-cluster-mtp3.almtp 1.cfg 1-grade.cfg
+
+#####################gcmc
+for d in {0..77}; do (cd $d; sed -i '4s/.*/2  atom types/' my.data;); done
