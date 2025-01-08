@@ -16,3 +16,5 @@ Potentials: https://github.com/ucsdlxg/MoNbTaVW-ML-interatomic-potential-and-CRS
 My own MTP14 and MTP16:
 MTP14: good for edge and screw dislocation
 MTP16: general-purpose
+Please cite:
+ Shuang, Fei and Ji, Yucheng and Laurenti, Luca and Dey, Poulumi, Size-Dependent Strength Superiority in Multi-Principal Element Alloys Versus Constituent Metals: Insights from Machine Learning Potential and Embedded-Atom Model. Available at SSRN: https://ssrn.com/abstract=4986636 or http://dx.doi.org/10.2139/ssrn.4986636 
